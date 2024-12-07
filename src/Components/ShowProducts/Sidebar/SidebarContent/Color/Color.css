@@ -1,0 +1,127 @@
+/* ----------------  Brand box --------------------*/
+
+.Color-container {
+	padding: 0 0 0px;
+}
+
+.Color-header {
+	text-align: start;
+	width: 100%;
+	font-size: 24px;
+	font-weight: 600;
+	padding: 30px 0 25px;
+	cursor: pointer;
+	position: relative;
+}
+
+.Color-header .plus {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 20px;
+	cursor: pointer;
+	color: #000;
+	box-sizing: border-box;
+	display: none;
+}
+
+.Color-header .plus.active {
+	display: flex;
+}
+
+.Color-header .minus {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 20px;
+	cursor: pointer;
+	color: #000;
+	box-sizing: border-box;
+}
+
+.Color-header .minus.hidden {
+	display: none;
+}
+
+.Color-Content {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 0 10px;
+}
+
+.Color-Content.active {
+	display: none;
+}
+
+.Color-content-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.Color-content-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+	cursor: pointer;
+}
+
+.item-color {
+	width: 25px;
+	height: 25px;
+	border: 1px solid #ddd;
+	border-radius: 20px;
+}
+
+.item-color.blue {
+	background-color: blue;
+}
+
+.item-color.black {
+	background-color: black;
+}
+
+.item-color.yellow {
+	background-color: yellow;
+}
+
+.item-color.silver {
+	background-color: silver;
+}
+
+.item-color.red {
+	background-color: red;
+}
+
+.item-color.green {
+	background-color: green;
+}
+
+.item-color.white {
+	background-color: white;
+}
+
+.item-title {
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+@media screen  and (min-width : 300px) {
+	.Color-content-item {
+		width: 45%;
+	}	
+}
+@media (min-width : 992px) {
+	.Color-header {
+	  padding: 22px 0 ;
+	}
+	.Color-content-list {
+		gap: 13px;
+	}
+  }

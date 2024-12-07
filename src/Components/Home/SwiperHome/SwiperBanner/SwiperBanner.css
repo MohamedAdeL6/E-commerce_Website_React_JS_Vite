@@ -1,0 +1,79 @@
+.banner_container {
+	position: relative;
+	padding-bottom: 40px;
+}
+
+.banner_container .img-box {
+	height: 200px;
+}
+
+.banner_container .swiper {
+	position: static;
+}
+
+.banner_container .swiper-backface-hidden .swiper-slide img {
+	padding: 0 0 0px;
+	border-radius: 15px;
+}
+
+.banner_container .swiper-horizontal>.swiper-pagination-bullets,
+.banner_container .swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: 0 !important;
+}
+
+.banner_container .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.banner_container .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+	width: 11px;
+	height: 11px;
+	border-radius: 20%;
+	margin: 0 7px;
+	transition: 1s all;
+	
+}
+
+.banner_container .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:hover,
+.banner_container .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:hover {
+	transform: scale(1.5);
+}
+
+.banner_container .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	animation: spinnerActiveBullet 2s infinite linear;
+}
+
+@keyframes spinnerActiveBullet {
+	0% {
+		transform:scale(1.5) rotate(0deg);
+	}
+
+	50% {
+		transform:scale(1.5) rotate(180deg);
+	}
+
+	100% {
+		transform:scale(1.5) rotate(360deg);
+	}
+}
+
+@media screen and (min-width : 575px) {
+	.banner_container .img-box {
+		height: 250px;
+	}
+}
+
+@media screen and (min-width : 768px) {
+	.banner_container .img-box {
+		height: 300px;
+	}
+}
+
+@media screen and (min-width : 992px) {
+	.banner_container .img-box {
+		height: 350px;
+	}
+}
+
+@media screen and (min-width : 1199px) {
+	.banner_container .img-box {
+		height: 400px;
+	}
+}
